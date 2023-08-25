@@ -14,4 +14,10 @@ class AIRPLANE_API AMyPlayerController : public APlayerController
 {
 	GENERATED_BODY()
 	
+public:
+	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	class UInputMappingContext* DefaultMappingContext;
+
 };
